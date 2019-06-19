@@ -16,6 +16,7 @@ if (process.env.NODE_ENV === "production") {
 //adding routes
 app.use(routes);
 
+//COME BACK HERE AND DOUBLE CHECK IF THIS WORKS
 //connecting to mongo db
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {
   useCreateIndex: true,
